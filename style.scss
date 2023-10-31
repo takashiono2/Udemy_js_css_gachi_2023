@@ -1,19 +1,27 @@
-.parent{
-  color: blue;
+$cWhite: white;
+$cBlack: black;
 
-  & > .element{
-    color: purple;
+#container{
+  text-align: center;
+}
 
-    &.second-child{
-      color: black;
+.btn{
+  background-color: $cWhite;
+  color: $cBlack;
+  border:2px solid $cBlack;
+  margin: 10px 40px;
+  padding:10px 40px 10px 40px;
+  font-weight: 600px;
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &.float{
+    &:hover{
+      box-shadow: 5px 5px 10px 0px rgb(0 0 0 0.5);
     }
   }
-}
-
-.element{
-  color: red;
-}
-
-// .child{
-//   color: purple;
-// }
+    // &:hover{
+    //   background-color: $cBlack;
+    //   color: $cWhite;
+    // }
+  }
