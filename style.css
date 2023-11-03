@@ -1,17 +1,43 @@
-#container {
-  text-align: center;
-}
-
-.btn {
+.try .btn {
+  position: relative;
+  display: inline-block;
   background-color: white;
-  color: black;
-  border: 2px solid black;
-  margin: 10px 40px;
-  padding: 10px 40px 10px 40px;
-  font-weight: 600px;
+  border: 1px solid black;
+  font-weight: 600;
+  padding: 10px 40px;
+  margin: 10px auto;
   cursor: pointer;
   transition: all 0.3s;
 }
-.btn.float:hover {
-  box-shadow: 0 0 10px black;
+.try .btn.float:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.try .btn.filled {
+  background-color: black;
+  color: white;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.try .btn.filled:hover {
+  background-color: white;
+  color: black;
+  box-shadow: none;
+}
+.try .btn.letter-spacing:hover {
+  background-color: black;
+  letter-spacing: 3px;
+  color: white;
+}
+.try .btn.shadow:hover {
+  transform: translate(-2.5px, -2.5px);
+  box-shadow: 5px 5px 0 0 black;
+}
+.try .btn.solid {
+  box-shadow: 5px 5px 0 0 black;
+  border-radius: 7px;
+}
+.try .btn.solid:hover {
+  box-shadow: none;
+  transform: translate(2px, 2px);
 }/*# sourceMappingURL=style.css.map */
