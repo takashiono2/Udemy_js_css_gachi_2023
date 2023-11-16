@@ -1,17 +1,35 @@
-@use "other-folder/mixin" as mxn;
-
-$cBlack: black;
+$cblack: black;
 
 body{
   text-align :center;
+}
+//速度：ease,回数：ループ,再生方向：normal,実行前後の状態：forwards
+@mixin animation(
+  $name,
+  $duration: 1s,
+  $timing-function: ease,
+  $delay: 0s,
+  $iteration-count: 1,
+  $direction: normal,
+  $fill-mode: forwards,
+) {
+  animation: {
+    name: $name;
+    duration: $duration;
+    timing-function: $timing-function;
+    delay: $delay;
+    iteration-count: $iteration-count;
+    direction: $direction;
+    fill-mode: $fill-mode;
+  }
 }
 
 .rect{
     display: inline-block;
     width: 100px;
     height: 100px;
-    background-color: $cBlack;
-    @include mxn.animation(
+    background-color: $cblack;
+    @include animation(
       $name: sk-bouncedelay
     );
     // animation: sk-bouncedelay 1.4s;
