@@ -1,11 +1,6 @@
-body {
-  background: blue;
+div span {
+  color: olive;
 }
-
-h1 {
-  color: blue;
-}
-
-h2 {
-  color: red;
+div span:not(.cls) {
+  color: purple;
 }/*# sourceMappingURL=style.css.map */

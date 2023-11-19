@@ -1,9 +1,55 @@
-「」;
+// a {
+//   color: orange;
 
-h1{
-  color: 「」.$cBlue;
-}
+//   &:visited{
+//     color: blue;
+//   }
+//   &:hover{
+//     color: red;
+//   }
+//   &:focus{
+//     color: green;
+//   }
+//   &:active{
+//     color: purple;
+//   }
+// }
 
-h2{
-  color: 「」.$cRed;
+// div{
+//   & span{
+//     color: olive;
+//     &:nth-child(1){
+//       color: purple;
+//     }
+//     &:nth-child(2){
+//       color: green;
+//     }
+//     &:nth-child(3){
+//       color: blue;
+//     }
+//   }
+// }
+
+// div{
+//   & span{
+//     color: olive;
+//     &:nth-of-type(1){
+//       color: purple;
+//     }
+//     &:nth-of-type(2){
+//       color: green;
+//     }
+//     &:nth-of-type(3){
+//       color: blue;
+//     }
+//   }
+// }
+
+div{
+  & span{
+    color: olive;
+    &:not(.cls){
+      color: purple;
+    }
+  }
 }

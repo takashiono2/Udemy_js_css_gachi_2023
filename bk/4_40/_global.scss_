@@ -1,5 +1,5 @@
-「」 "child";
-「」 "child2";
+@forward "child";
+@forward "child2";
 
 @use "child";
 
