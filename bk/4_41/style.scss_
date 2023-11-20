@@ -45,11 +45,7 @@
 //   }
 // }
 
+//clsクラス以外の文字をolive色にする
 div{
-  & span{
-    color: olive;
-    &:not(.cls){
-      color: purple;
-    }
-  }
+「」
 }
