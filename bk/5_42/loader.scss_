@@ -18,7 +18,7 @@ $cblack: black;
     }
   }
 
-@keyframes sk-bouncedelay{
+  @keyframes sk-bouncedelay{
     0% {
       transform: scale(0);
     }
